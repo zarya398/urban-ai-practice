@@ -250,7 +250,7 @@ tables: list[tuple[str, str]] = []
 # 4.1 Сводная статистика по показателям
 stats_cols = [
     ("population", "Население", "чел."),
-    ("number_of_floors", "Средняя этажность зданий", "эт."),
+    ("number_of_floors", "Сумма этажей зданий", "эт."),
     ("site_area", "Площадь участка", "м²"),
     ("footprint_area", "Площадь застройки (пятно)", "м²"),
     ("build_floor_area", "Суммарная площадь этажей", "м²"),
@@ -487,7 +487,7 @@ POPUP_FIELDS = [
     ("land_use", "Землепользование", "str"),
     ("share", "Доля класса", "pct"),
     ("population", "Население, чел.", "int"),
-    ("number_of_floors", "Средняя этажность", "num"),
+    ("number_of_floors", "Сумма этажей, эт.", "num"),
     ("is_living", "Жилых зданий", "int"),
     ("site_area", "Площадь участка, га", "ha"),
     ("living_area", "Жилая площадь, м²", "int"),
