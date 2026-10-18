@@ -39,6 +39,30 @@ Data
 All the required data is stored in `examples
 data folder <./examples/data>`__.
 
+Not published data
+------------------
+
+Some heavy and intermediate files stay **local only** and are not pushed
+to GitHub (they are listed in ``.gitignore``):
+
+- ``examples/data/vyborg/osm_*.geojson`` — raw OpenStreetMap extracts;
+- ``examples/data/vyborg/walk_graph.pkl`` — walkability graph built from
+  the OSM data;
+- ``examples/cache/`` — calculation cache;
+- ``.vscode/``, ``examples/vyborg_pipeline_backup.ipynb`` — editor
+  settings and a notebook backup.
+
+Published results in ``examples/data/vyborg/``: ``blocks.geojson``,
+``boundaries.geojson``, ``buildings_blocks.geojson``,
+``school_blocks.geojson``, ``kindergarten_blocks.geojson``,
+``polyclinic_blocks.geojson``, ``vyborg_metrics.geojson`` and all CSV
+files (accessibility matrix, provision, density, morphotypes).
+
+To regenerate the missing files, open
+``examples/vyborg_pipeline.ipynb``, set ``USE_SAVED_DATA = False`` and
+run the cells from top to bottom. Internet access is required to
+download the OSM data. Local copies of the files are kept on disk.
+
 Examples
 --------
 

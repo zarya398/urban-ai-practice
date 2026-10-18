@@ -42,3 +42,16 @@ ENV/
 
 # PyCharm env
 .idea
+
+# VS Code
+.vscode/
+
+# Local caches
+examples/cache/
+
+# Raw OpenStreetMap data and derived graph (regenerate in the notebook)
+examples/data/vyborg/osm_*.geojson
+examples/data/vyborg/walk_graph.pkl
+
+# Notebook backup copy
+examples/vyborg_pipeline_backup.ipynb
